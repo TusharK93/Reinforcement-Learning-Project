@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: rl-pricing-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python train.py --timesteps 30000 --eval-episodes 10
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+
+  - type: web
+    name: rl-pricing-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run dashboard.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: API_URL
+        fromService:
+          type: web
+          name: rl-pricing-api
+          envVarKey: RENDER_EXTERNAL_URL
