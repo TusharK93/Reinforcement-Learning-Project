@@ -1,7 +1,6 @@
 # RL Dynamic Pricing Optimizer
 Reinforcement learning project that learns pricing decisions in a **simulated retail environment**. A Deep Q-Network (DQN) agent chooses among safe price multipliers to optimize cumulative profit while accounting for demand, inventory, competitor pricing, and price-change penalties.
 
-> This is a research/demo simulator, not a system validated for real-world pricing decisions. All reported outcomes must come from your own evaluation runs.
 
 ## Features
 
