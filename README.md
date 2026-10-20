@@ -60,7 +60,7 @@ The quality of the recommendations depends on the environment design, reward fun
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/TusharK93/Reinforcement-Learning-Project.git)
 cd YOUR_REPOSITORY
 ```
 
