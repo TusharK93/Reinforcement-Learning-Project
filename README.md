@@ -353,7 +353,8 @@ GitHub: https://github.com/TusharK93
 
 LinkedIn: Add your LinkedIn profile URL.
 
----
-
 If you find this project useful, consider giving the repository a star.
->>>>>>> 1d2c89d014e8c4f7e84cc28cd0fd321decdc7483
+<p align="center">
+  <img src="rf.jpg" alt="Financial RAG Assistant end-to-end pipeline" width="100%">
+</p>
+
